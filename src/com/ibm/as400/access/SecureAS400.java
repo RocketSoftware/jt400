@@ -21,6 +21,8 @@ import java.beans.PropertyVetoException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import javax.net.ssl.SSLSocketFactory;
+
 import com.ibm.as400.security.auth.ProfileTokenCredential;
 
 /**
@@ -291,5 +293,8 @@ public class SecureAS400 extends AS400
         changeCipherSuites = true;
         newCipherSuites = suites;
       }
+    }
+    public void setSSLSocketFactory(SSLSocketFactory sslSocketFactory) {
+    	useSSLConnection_.sslSocketFactory_ = sslSocketFactory;
     }
 }

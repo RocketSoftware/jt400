@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
+RocketSoftware-Version: 1.0.0
 Main-Class: com.ibm.as400.access.jdbcClient.Main
 
 Name: com/ibm/as400/access/
